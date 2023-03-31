@@ -11,7 +11,7 @@ public class cliente {
 
     ///Constructor
     public cliente() {
-        setId(UUID.randomUUID().toString().toUpperCase());
+        this.id= (UUID.randomUUID().toString().toUpperCase());
     }
 
 
@@ -41,15 +41,12 @@ public class cliente {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    public void setId(String id) {
-        this.id = id;
-    }
 
 
     ///Metodos
 
     public void mostrar(){
-        System.out.println("Cliente:\n Id: "+getId()+" Nombre: "+getNombre()+" Email: "+getEmail()+" Descuento: "+getDescuento()+"%.");
+        System.out.println("Cliente:\n |Id: "+getId()+" |Nombre: "+getNombre()+" |Email: "+getEmail()+" |Descuento: "+getDescuento()+"%.");
     }
 
     public void mostrarCliente (){
@@ -61,7 +58,12 @@ public class cliente {
 
 
 
-
-
-
+    public String toString() {
+        return "cliente{" +
+                "id='" + id + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", email='" + email + '\'' +
+                ", descuento=" + descuento +
+                '}';
+    }
 }
