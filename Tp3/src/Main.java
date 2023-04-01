@@ -2,6 +2,8 @@ import models.cilindro;
 
 public class Main {
     public static void main(String[] args) {
+        ///Ejercicio 1
+        /*
 
         cilindro nuevo =new cilindro();
         nuevo.setColor("auzl");
@@ -14,6 +16,10 @@ public class Main {
         System.out.println("\n");
 
         System.out.println("El area del cilindro es de "+nuevo.area());
+         */
+
+        ///Ejercicio 2
+
 
     }
 }
