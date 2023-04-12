@@ -16,7 +16,7 @@ public class Alquiler {
     public Alquiler() {
     }
 
-    public Alquiler(Integer id, String pelicula, String nombre, LocalDate salida, LocalDate reingreso) {
+    public Alquiler( String pelicula, String nombre, LocalDate salida, LocalDate reingreso) {
         Id = UUID.randomUUID().toString();
         this.pelicula = pelicula;
         this.nombre = nombre;

@@ -17,7 +17,9 @@ public class Main {
         //Roberto.MostrarPeliculas();
         Roberto.AgregarPelicula("El hombre araña",LocalDate.of(2008,04,27),Genero.Aventura,10,260,Audiencia.pg_13,Pais.EstadosUnidos);
 
+        Roberto.AgregarCliente("Jorge Perez","2235918779","Calle fatasia 123");
         Roberto.MostrarPeliculas();
+        Roberto.MostrarClientes();
 
 
     }
