@@ -1,22 +1,23 @@
-package Clases;
+package Models;
 
-public class Artista {
+public class Artista  {
     private String nombre;
     private Integer edad;
     private String nacionalidad;
 
-    ///region Constructores
-    public Artista() {
-    }
-
+    ///region Constructor
     public Artista(String nombre, Integer edad, String nacionalidad) {
         this.nombre = nombre;
         this.edad = edad;
         this.nacionalidad = nacionalidad;
     }
+
+    public Artista() {
+    }
+
     ///endregion
 
-    ///region Get and Set
+    ///region Set and get
 
     public String getNombre() {
         return nombre;
@@ -41,10 +42,9 @@ public class Artista {
     public void setNacionalidad(String nacionalidad) {
         this.nacionalidad = nacionalidad;
     }
-
-
     ///endregion
 
+    ///region Metodo
 
     @Override
     public String toString() {
@@ -54,4 +54,8 @@ public class Artista {
                 ", nacionalidad='" + nacionalidad + '\'' +
                 '}';
     }
+
+
+    ///endregion
+
 }

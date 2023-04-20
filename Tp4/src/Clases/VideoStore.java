@@ -107,12 +107,16 @@ public class VideoStore  {
         if (EncontrarCliente(nombre) == null){
 
             Cliente nuevo = new Cliente();
-            System.out.println("Ingrese los datos");
+            System.out.println("Ingrese nombre: ");
             nuevo.setNombre(leer.next());
-            System.out.println("Ingrese telefono");
+
+            System.out.println("Ingrese telefono: ");
             nuevo.setTelefono(leer.next());
-            System.out.println("Ingrese dirreccion");
+
+
+            System.out.println("Ingrese dirreccion: ");
             nuevo.setDirreccion(leer.next());
+
 
         }
 
