@@ -52,27 +52,46 @@ public class ListaPremium implements Reproduccion {
 
     @Override
     public String Reproducir() {
-        return null;
+        Cancion aux=MiLista.getFirst();
+
+
+
+        return aux.toString();
     }
 
     @Override
     public void AgregarLista(Cancion x) {
-
+        MiLista.addLast(x);
     }
 
     @Override
     public String EliminarCancion() {
-        return null;
+        int i;
+        for (Cancion x: MiLista){
+            System.out.println("1. "+x.toString()+"\n");
+        }
+
+        i=Consola.leerInt("indique un numero para borrar la cancion...");
+
+        MiLista.remove(i);
+        return VerMiLista();
     }
 
     @Override
     public void CambiarCancion() {
+        Cancion aux=MiLista.getFirst();
 
+        MiLista.remove(aux);
+        MiLista.addLast(aux);
     }
 
     @Override
     public String VerMiLista() {
-        return null;
+        String aux ="Lista de Canciones: \n";
+        for (Cancion x:MiLista){
+            aux += x.toString()+"\n";
+        }
+        return aux;
     }
 
     ///endregion

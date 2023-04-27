@@ -9,9 +9,9 @@ public class ListaBlanca implements Reproduccion{
 
     ///region Constructores
 
-    public ListaBlanca(String nombre, Stack<Cancion> miLista) {
+    public ListaBlanca(String nombre) {
         this.nombre = nombre;
-        MiLista = new Stack<>();
+        MiLista = new Stack<Cancion>();
     }
 
     public ListaBlanca() {
@@ -61,7 +61,7 @@ public class ListaBlanca implements Reproduccion{
         }
         MiLista.push(aux);
 
-        return aux.toString();
+        return "Reproduciendo: \n"+aux.toString();
     }
 
     @Override
@@ -81,7 +81,11 @@ public class ListaBlanca implements Reproduccion{
 
     @Override
     public String VerMiLista() {
-        return "Mi lista = "+MiLista;
+        String aux ="Lista de Canciones: \n";
+        for (Cancion x:MiLista){
+            aux += x.toString()+"\n";
+        }
+        return aux;
     }
 
     @Override
