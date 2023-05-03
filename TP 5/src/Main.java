@@ -22,7 +22,7 @@ public class Main {
 
         System.out.println();
 
-        /*
+
         //System.out.println("La lista de reproduccion queda:\n");
         //System.out.println();
 
@@ -37,7 +37,7 @@ public class Main {
         System.out.println(MiLista.EliminarCancion());
 
         System.out.println(MiLista.VerMiLista());
-        */
+
 
 
 
