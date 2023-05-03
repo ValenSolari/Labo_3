@@ -37,6 +37,14 @@ public class Impresora extends Informatica{
                 "} ";
     }
 
+    @Override
+    public void Aumento() {
+        System.out.println(toString());
+        System.out.println("Precio viejo: "+getPrecio());
+        setPrecio(getPrecio()+((getPrecio()*15)/100));
+        System.out.println("Precio Nuevo: "+getPrecio());
+    }
+
 
     ///endregion
 }

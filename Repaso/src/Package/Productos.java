@@ -1,6 +1,6 @@
 package Package;
 
-public class Productos {
+public abstract class Productos {
     private String nombre;
     private int stock;
     private int precio;
@@ -86,6 +86,8 @@ public class Productos {
         setDescuento(descuento);
         setPreciofinal(precio-((precio*descuento)/100));
     }
+
+    public abstract void Aumento();
 
     ///
 }

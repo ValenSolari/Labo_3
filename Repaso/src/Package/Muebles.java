@@ -18,5 +18,8 @@ public class Muebles extends Productos{
     public String toString() {
         return super.toString();
     }
+
+    @Override
+    public void Aumento(){};
     ///endregion
 }

@@ -51,6 +51,14 @@ public class Escritorios extends Muebles{
                 "} ";
     }
 
+    @Override
+    public void Aumento() {
+        System.out.println(toString());
+        System.out.println("Precio viejo: "+getPrecio());
+        setPrecio(getPrecio()+((getPrecio()*10)/100));
+        System.out.println("Precio Nuevo: "+getPrecio());
+    }
+
 
     ///endregion
 }

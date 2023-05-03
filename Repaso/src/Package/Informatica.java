@@ -39,6 +39,9 @@ public class Informatica extends Productos {
                 "} " ;
     }
 
+    @Override
+    public void Aumento(){};
+
 
     ///endregion
 }
