@@ -6,6 +6,8 @@ import java.util.UUID;
 import java.util.logging.SocketHandler;
 
 public class Main {
+
+    ///El map sirve para poder hacer u array com su suvidice persoalizado.
     public static void main(String[] args) {
         Persona nueva = new Persona();
 
