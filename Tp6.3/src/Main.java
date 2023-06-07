@@ -3,6 +3,8 @@ import Package.*;
 import javax.swing.event.ListDataEvent;
 import javax.xml.crypto.dsig.spec.XSLTTransformParameterSpec;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class Main {
@@ -41,8 +43,10 @@ public class Main {
         CargarArraysVideojuegos(Games,l);
 
         System.out.println(MostrarVideojuegos(Games));
+        Collections.sort(Games);
+        System.out.println(MostrarVideojuegos(Games));
 
-
+        /*
         Series.get(0).Entregar();
         Series.get(3).Entregar();
 
@@ -54,11 +58,15 @@ public class Main {
         System.out.println(MonstrarSeries(Series));
         System.out.println(MostrarVideojuegos(Games));
 
+
+
         int m= ContrarSeriesDevueltas(Series);
         System.out.println("Series devultas = "+m);
 
         int ñ= ContarVideojuegosDevueltos(Games);
         System.out.println("Videojuegos Devueltos: "+ñ);
+
+         */
 
     }
 

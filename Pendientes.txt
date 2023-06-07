@@ -1,3 +1,2 @@
-Terminar 3
-Terminar 4
-Hacer 5
+Terminar 6
+Haciendo 7

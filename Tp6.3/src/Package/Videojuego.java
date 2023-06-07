@@ -1,6 +1,6 @@
 package Package;
 
-public class Videojuego implements IAcciones {
+public class Videojuego implements Comparable<Videojuego>  {
     ///Sus atributos son titulo, horas estimadas, entregado, genero y compañia
     private String titulo;
     private int horasEstimadas;
@@ -86,22 +86,22 @@ public class Videojuego implements IAcciones {
     }
 
 
-    @Override
+
     public void Entregar() {
         this.entregado=true;
     }
 
-    @Override
+
     public void devolver() {
         this.entregado=false;
     }
 
-    @Override
+
     public boolean isEtregado() {
         return entregado;
     }
 
-    @Override
+    /*@Override
     public int compareTo(Object c) {
         int i;
         Videojuego a = (Videojuego) c;
@@ -115,6 +115,25 @@ public class Videojuego implements IAcciones {
             i=-1;
         }
         return i;
+    }
+
+     */
+
+    @Override
+    public int compareTo(Videojuego o) {
+        /*int i;
+        Videojuego a = o;
+        if (this.horasEstimadas<a.getHorasEstimadas()|| a == null){
+            i=1;
+        }
+        else if (this.horasEstimadas == a.getHorasEstimadas()){
+            i=0;
+        }
+        else {
+            i=-1;
+        }
+        return i;*/
+        return this.titulo.compareTo(o.getTitulo());
     }
 
     @Override

@@ -1,0 +1,13 @@
+[ {
+  "nombre" : "Perro",
+  "edad" : 10
+}, {
+  "nombre" : "Gato",
+  "edad" : 5
+}, {
+  "nombre" : "Ave",
+  "edad" : 3
+}, {
+  "nombre" : "Elefante",
+  "edad" : 34
+}, null ]
